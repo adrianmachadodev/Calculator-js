@@ -1,0 +1,101 @@
+body{
+
+    background-color:grey;
+
+
+
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color:teal;
+    box-shadow: rgba(214, 238,236, 0.25);
+
+
+}
+
+#display{
+    position: relative;
+    width: 98%;
+    border: none;
+    outline: none;
+    text-align: right;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: white;
+}
+
+.grid-container{
+
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    padding:3px;
+}
+
+.grid-item{
+
+    padding:5px 10px;
+    width: 59px;
+    outline: none;
+    margin: 0.5px;
+    font-size: 1,5rem;
+    text-align: center;
+    border: none;
+    box-shadow: rgba(182, 182, 211, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
+}
+
+.plus{
+
+    background-color:slategrey;
+
+
+}
+
+.minus{
+
+    background-color:slategrey;
+
+
+}
+
+
+.multiply{
+
+    background-color:slategrey;
+
+
+}
+
+
+.divide{
+
+    background-color:slategrey;
+
+
+}
+
+.equal{
+
+    background-color: red;
+    color: white;
+    grid-row: span 4;
+
+
+}
+
+.grid-item:active{
+
+    background-color: skyblue;
+
+}
